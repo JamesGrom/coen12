@@ -1,0 +1,89 @@
+James Grom
+Tuesday 2:15pm 
+COEN 12 project 2
+
+
+Unsorted:
+
+Algorithmic complexity of each respective function:
+(annotated using big O notation)
+
+	Function_Name(): big O runtime
+
+	createSet(): O(1)
+
+	destroySet(): O(n) //for loop to delete each of n strings, n=count
+
+	numElements(): O(1)
+
+	addElement(): O(n) //because it searches to see if element is unique
+
+	removeElement(): O(n) //because it searches to see if element is unique
+
+	findElement(): O(n) 
+
+	getElements(): O(n) //because of memcopy
+
+	search(): O(n) //sequential/ linear search
+
+
+Sorted:
+
+Algorithmic complexity of each respective function:
+(annotated using big O notation)
+
+	Function_Name() : big O runtime
+
+	destroySet(): O(n) //for loop to delete each of n strings, n=count
+
+	numElements(): O(1)
+
+	addElement(): O(n)// because of shifting associated with addition of element
+
+	removeElement(): O(n) //because of shifting associated with removal of element
+	
+	findElement(): O(log(n)) //because of search function usage
+
+	getElements: O(n) //because of memcpy
+
+	search(): O(log(n)) //because of binary search
+
+
+
+
+"real" execution time averages:
+
+	average execution time for 		unique.c				parity.c
+			|							|						|
+			V							V						V
+
+		File_name: 			unsorted.c: sorted.c	unsorted.c: sorted.c
+	
+		Bible:					4.888s: .478s		  1m0.172s:6.004s 		
+		
+		Genesis:				 .109s: .030s		     .425s: .090s
+	
+		GreenEggsAndHam:		 .007s: .007s		  	 .007s: .007s
+	
+		HoundOfTheBaskervilles:  .317s: .065s			1.760s: .317s
+
+		Macbeth:				 .106s: .030s			 .342s: .080s
+
+		TheCountOfMonteCristo:	4.518s: .485s		   52.995s:6.19s
+
+		TheSecretGarden:		 .351s: .064s		 	1.950s: .383s
+
+		TheWarOfTheWorlds:		 .424s: .082s			2.138s: .373s
+
+		TreasureIsland:			 .378s: .075s			2.230s: .385s
+
+		TwentyThousandLeagues:	 .849s: .136s			5.523s: .777s
+
+	
+
+	
+
+
+
+
+
