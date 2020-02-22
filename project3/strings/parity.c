@@ -54,15 +54,22 @@ int main(int argc, char *argv[])
 
     words = 0;
     odd = createSet(MAX_SIZE);
-
     while (fscanf(fp, "%s", buffer) == 1) {
         words ++;
 
         if (findElement(odd, buffer))
-            removeElement(odd, buffer);
-        else
+		{
+			//printf("h1\n");
+			removeElement(odd, buffer);
+			//printf("h2\n");
+		}
+		else
+		{
+			//printf("h3\n");
             addElement(odd, buffer);
-    }
+    		//printf("h4\n");
+		}
+	}
 
     printf("%d total words\n", words);
     printf("%d words occur an odd number of times\n", numElements(odd));

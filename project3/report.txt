@@ -1,0 +1,91 @@
+James Grom
+Tuesday 2:15pm 
+COEN 12 project 3
+
+
+Strings:
+
+Algorithmic complexity of each respective function:
+(annotated using big O notation)
+
+	Function_Name(): big O runtime
+
+	createSet(): O(n) //must initialize the flag array to have all slots EMPTY
+
+	destroySet(): O(n) //for loop to delete each string with data
+
+	numElements(): O(1)
+
+	addElement(): O(n) //because it searches to see if element is unique
+
+	removeElement(): O(n) //because it searches to see if element is unique
+
+	findElement(): O(n) 
+
+	getElements(): O(n) 
+
+	search(): O(n) //linear probing
+
+
+Sorted:
+
+Algorithmic complexity of each respective function:
+(annotated using big O notation)
+
+	Function_Name() : big O runtime
+
+	createSet(): O(n) //initialize flag array 	
+
+	destroySet(): O(n) //for loop to
+
+	numElements(): O(1)
+
+	addElement(): O(n)// search using linear probing
+
+	removeElement(): O(n) // search using linear probing
+	
+	findElement(): O(n) //search using linear probing
+
+	getElements: O(n) 
+
+	search(): O(n) //because of linear probing
+
+
+
+
+"real" execution time averages:
+
+	average execution time for 		unique.c				parity.c
+			|							|						|
+			V							V						V
+
+		File_name: 				strings: generic	strings: generic
+	
+		Bible:					 .118s: .127s		  	.256s: .262s 		
+		
+		Genesis:				 .018s: .023s		     .018s: .022s
+	
+		GreenEggsAndHam:		 .009s: .011s		  	 .010s: .010s
+	
+		HoundOfTheBaskervilles:  .022s: .021s			 .026s: .030s
+
+		Macbeth:				 .014s: .016s			 .014s: .016s
+
+		TheCountOfMonteCristo:	 .095s: .094s		   	.191s:.200s
+
+		TheSecretGarden:		 .024s: .025s		 	.033ss: .034s
+
+		TheWarOfTheWorlds:		 .022s: .034s			.026s: .029s
+
+		TreasureIsland:			 ..023s: .026s			.030s: .032s
+
+		TwentyThousandLeagues:	 .028s: .029s			.042ss: .051s
+
+	
+
+	
+
+
+
+
+
