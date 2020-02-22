@@ -1,0 +1,17 @@
+James Grom 
+Application 2 
+
+Chosen Data structure: A hash table directly indexed by student ID's
+Rationale: This data structure allows for all opperations to be O(1) excluding the creation of the set, It also provides O(1) search efficiency for searching via student ID. This Data structure uses a proportionally large amount of memory as its size must be 2x the max number of students to account for the random nature of student ID assignments that can increment up to 2 (hence the hash table must be 2x the size of the max number of students to accomidate the rare case that every student ID is +2 appart). However no inscentive was given to prioritize memory and this data structure yeilds O(1) efficiency for all but 1 operation which is only called 1 time at the creation of the structure.
+
+A Linked list would not be ideal as it would result in an O(n) search efficiency
+
+a Sorted array would not be ideal as it would result in an O(logn) search efficiency and an O(n) insertion and deletion efficiency
+
+Big O runtimes:
+ CreateSet()=O(n)
+ destroySet()=O(1)
+ searchID()=O(1)
+ insertion()=O(1)
+ deletion()=O(1)
+

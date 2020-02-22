@@ -1,0 +1,49 @@
+James Grom
+Application 1
+
+
+Chosen Data Structure: directly hashed/sorted array of pointers to singly linked list of students with the same age (corresponding to index of the linked list in the array)
+
+Justification for selected data structure: The given data structure prioritizes searching by having the students sorted by age and directly hashed by age, the array of linked lists allowed for direct hashing leading to an O(1) search time and O(1) maxAgeGap(). Linked lists of students with the same age also allowed easy accessing of students with the same age as returning that linked list head pointer would grant access to all students of that age returning multiple records for a given age
+
+A hash table by itself would not be ideal because its maxAge gap would be O(n) where n represents the number of students enrolled which, unlike the range in age of enrollment, is largely variable 
+
+A sorted array by itself would not be as ideal, because the searchAge function would be O(logn) and it would be an inneficient process to return all students of a given age because it would need to traverse the array starting from the first student to be of that age to the last student of that age in order to return an array of all students of that age
+
+A linked list would not be ideal as its search() and MaxAgeGap() would both be O(n)   
+
+
+
+
+
+
+
+Big O runtimes:
+//(assuming that the possible ages of enrollment
+// are always between 18 and 30 and therefore constant)
+CreateSet()=O(1)
+destroySet()=O(n)
+searchAge()=O(1)
+insertion()=O(1)
+deletion()=O(1)
+maxAgeGap()=O(1)
+
+
+//assuming possible ages of enrollment vary to large n
+CreateSet()=O(n)
+destroySet()=O(n)
+searchAge()=O(1) //O(n) if you include printing each student
+insertion()=O(1)
+deletion()=O(n)
+maxAgeGap()=O(n)
+
+
+
+
+
+
+
+
+
+			
+
